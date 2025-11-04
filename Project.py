@@ -1,6 +1,5 @@
-import pandas as pd
-
-import os
+import pandas as pd  # Import pandas for data manipulation and analysis
+import os  # Import os for file path operations
 
 # Define the file path (use raw string to avoid backslash escape issues)
 file_path = r"C:\Users\Nikol\OneDrive\CSC300\projectrrr.csv"
@@ -11,47 +10,48 @@ if not os.path.exists(file_path):
 
 # Read CSV safely with a fallback if the python engine raises an unexpected error
 try:
-    df = pd.read_csv(file_path, engine="python", on_bad_lines="skip")
+    df = pd.read_csv(file_path, engine="python", on_bad_lines="skip")  # Read CSV with error handling for bad lines
 except Exception:
-    df = pd.read_csv(file_path)
-df.columns = df.columns.str.strip()
+    df = pd.read_csv(file_path)  # Fallback to default engine if an error occurs
+df.columns = df.columns.str.strip()  # Strip whitespace from column names
 
 # Identify value columns (all except Date)
 value_cols = [c for c in df.columns if c.lower() != "date"]
 
 # Function to clean numeric columns
 def to_numeric_series(s):
-    cleaned = s.astype(str).str.strip()
+    cleaned = s.astype(str).str.strip()  # Convert to string and strip whitespace
     cleaned = cleaned.replace({'-': '0'})  # Treat dash as zero
-    cleaned = cleaned.str.replace(r"[^0-9.\-]", "", regex=True)
-    cleaned = cleaned.replace({'': '0', '-': '0'})
-    return pd.to_numeric(cleaned, errors="coerce")
+    cleaned = cleaned.str.replace(r"[^0-9.\-]", "", regex=True)  # Remove non-numeric characters
+    cleaned = cleaned.replace({'': '0', '-': '0'})  # Replace empty or dash with zero
+    return pd.to_numeric(cleaned, errors="coerce")  # Convert to numeric, coercing errors to NaN
 
 # Clean up numeric values
-df_clean = df.copy()
+df_clean = df.copy()  # Create a copy of the original DataFrame
 for c in value_cols:
-    df_clean[c] = to_numeric_series(df_clean[c])
+    df_clean[c] = to_numeric_series(df_clean[c])  # Apply cleaning function to each value column
 
 # Sum spending per agency across all dates
-totals = df_clean[value_cols].sum(axis=0, skipna=True).reset_index()
-totals.columns = ["Agency", "Total_Spend"]
+totals = df_clean[value_cols].sum(axis=0, skipna=True).reset_index()  # Sum values for each agency
+totals.columns = ["Agency", "Total_Spend"]  # Rename columns for clarity
 
 # Filter agencies with spend > $1,000,000
-over_1m = totals[totals["Total_Spend"] > 1_000_000].sort_values("Total_Spend", ascending=False)
+over_1m = totals[totals["Total_Spend"] > 1_000_000].sort_values("Total_Spend", ascending=False)  # Filter and sort
 
 # --- Paginated display in terminal ---
-chunk_size = 15  # how many rows to show at once
-num_rows = len(over_1m)
+chunk_size = 15  # Define how many rows to show at once
+num_rows = len(over_1m)  # Get the total number of rows
 
+# Loop through the data in chunks for paginated display
 for start in range(0, num_rows, chunk_size):
-    end = min(start + chunk_size, num_rows)
-    print(f"\n🟩 Showing agencies {start + 1} to {end} of {num_rows}\n")
-    print(over_1m.iloc[start:end].to_string(index=False))
+    end = min(start + chunk_size, num_rows)  # Calculate the end index for the current chunk
+    print(f"\n🟩 Showing agencies {start + 1} to {end} of {num_rows}\n")  # Display chunk info
+    print(over_1m.iloc[start:end].to_string(index=False))  # Print the current chunk
     
-    if end < num_rows:
-        input("\nPress Enter to see more...\n")
+    if end < num_rows:  # If there are more rows to display
+        input("\nPress Enter to see more...\n")  # Wait for user input to continue
 
-print("\n✅ Finished displaying all agencies over $1M.\n")
+print("\n✅ Finished displaying all agencies over $1M.\n")  # Indicate completion
 
 
 
@@ -100,5 +100,3 @@ print("\n✅ Finished displaying all agencies over $1M.\n")
 # print("\n🟦 Departments matching agencies over $1M spend:\n")
 # print(matching_departments['Department'].to_string(index=False))
 # # how to make this whole code in a comment
-
-#yo 
