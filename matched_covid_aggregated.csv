@@ -1,34 +1,17 @@
-Matched_Agency_clean,Department_display,Num_Covid_Rows,Covid_Initiatives,Sum_Initiative Detailed,Sum_Budget 2021,Sum_Spent 2021,Sum_Budget 2022,Sum_Spent 2022
-citywide,Citywide,0,,0.0,0.0,0,0.0,0
-administration for child services,Administration for Child Services,0,,0.0,0.0,0,0.0,0
-department of social services,DEPARTMENT OF SOCIAL SERVICES,8,Covid Response - Public Programs | Covid Response - City Operations,,161923138.0,155068152,308273401.0,282313037
-board of elections,BOARD OF ELECTIONS,1,Covid Response - City Operations,,120006.0,120006,,0
-civilian complaint review board,Civilian Complaint Review Board,0,,0.0,0.0,0,0.0,0
-department for the aging,DEPARTMENT FOR THE AGING,1,Covid Response - City Operations,,44151.0,0,,0
-department of buildings,DEPARTMENT OF BUILDINGS,2,Covid Response - Public Programs | Covid Response - City Operations,,927774.0,0,1200000.0,1107657
-department of citywide administrative services,Department of Citywide Administrative Services,0,,0.0,0.0,0,0.0,0
-department of consumer affairs,Department of Consumer Affairs,0,,0.0,0.0,0,0.0,0
-department of correction,DEPARTMENT OF CORRECTION,2,Covid Response - City Operations,-19.0,676233.0,0,533324540.0,0
-department of design and construction,Department of Design and Construction,0,,0.0,0.0,0,0.0,0
-department of education,DEPARTMENT OF EDUCATION,1,Covid Response - Public Programs,,0.0,0,0.0,0
-department of emergency management,DEPARTMENT OF EMERGENCY MANAGEMENT,3,Covid Response - City Operations | Covid Response - Public Programs,,258528.0,232098,1333080.0,1333079
-department of environmental protection,Department of Environmental Protection,0,,0.0,0.0,0,0.0,0
-department of finance,Department of Finance,0,,0.0,0.0,0,0.0,0
-department of health and mental hygiene,DEPARTMENT OF HEALTH AND MENTAL HYGIENE,2,Covid Response - City Operations | Covid Response - Public Programs,,2026.0,0,,0
-department of homeless services,Department of Homeless Services,0,,0.0,0.0,0,0.0,0
-department of information technology and telecommunications,Department of Information Technology and Telecommunications,0,,0.0,0.0,0,0.0,0
-department of parks and recreation,Department of Parks and Recreation,0,,0.0,0.0,0,0.0,0
-department of probation,DEPARTMENT OF PROBATION,2,Covid Response - Public Programs,,147167.0,112167,1057833.0,1057833
-department of sanitation,DEPARTMENT OF SANITATION,1,Covid Response - City Operations,,2919223.0,2919222,,0
-department of small business services,Department of Small Business Services,0,,0.0,0.0,0,0.0,0
-department of transportation,DEPARTMENT OF TRANSPORTATION,7,Covid Response - Public Programs | Covid Response - City Operations,,537640.0,406000,7569108.0,6273197
-department of youth and community development,Department of Youth and Community Development,0,,0.0,0.0,0,0.0,0
-district attorneykings county,District Attorney—Kings County,0,,0.0,0.0,0,0.0,0
-district attorneynew york,District Attorney—New York,0,,0.0,0.0,0,0.0,0
-financial information services agency,Financial Information Services Agency,0,,0.0,0.0,0,0.0,0
-fire department,FIRE DEPARTMENT,2,Covid Response - City Operations | Covid Response - Public Programs,-19.0,30034490.0,30034490,510702.0,510702
-housing preservation and development,Housing Preservation and Development,0,,0.0,0.0,0,0.0,0
-mayoralty,MAYORALTY,3,Covid Response - City Operations,,134328.0,0,,0
-miscellaneous,MISCELLANEOUS,2,Covid Response - Public Programs,,3928021.0,0,40409411.0,40409411
-office of the comptroller,OFFICE OF THE COMPTROLLER,1,Covid Response - City Operations,,62445.0,0,,0
-police department,POLICE DEPARTMENT,1,Covid Response - City Operations,,2914707.0,0,566500000.0,566500000
+Department,Total_Spend_From_First_File,Num_Covid_Rows,Covid_Initiatives,Sum_Initiative Detailed,Sum_Budget 2021,Sum_Spent 2021,Sum_Budget 2022,Sum_Spent 2022
+BOARD OF ELECTIONS,"$10,764,084.00",1,Covid Response - City Operations,$0.00,"$120,006.00","$120,006.00",$0.00,$0.00
+DEPARTMENT FOR THE AGING,"$22,607,336.00",1,Covid Response - City Operations,$0.00,"$44,151.00",$0.00,$0.00,$0.00
+DEPARTMENT OF BUILDINGS,"$42,885,432.00",2,Covid Response - Public Programs | Covid Response - City Operations,$0.00,"$927,774.00",$0.00,"$1,200,000.00","$1,107,657.00"
+DEPARTMENT OF CORRECTION,"$197,328,621.00",2,Covid Response - City Operations,$-19.00,"$676,233.00",$0.00,"$533,324,540.00",$0.00
+DEPARTMENT OF EDUCATION,"$815,748,461.00",1,Covid Response - Public Programs,$0.00,$0.00,$0.00,$0.00,$0.00
+DEPARTMENT OF EMERGENCY MANAGEMENT,"$533,891,530.00",3,Covid Response - City Operations | Covid Response - Public Programs,$0.00,"$258,528.00","$232,098.00","$1,333,080.00","$1,333,079.00"
+DEPARTMENT OF HEALTH AND MENTAL HYGIENE,"$1,084,108,126.00",2,Covid Response - City Operations | Covid Response - Public Programs,$0.00,"$2,026.00",$0.00,$0.00,$0.00
+DEPARTMENT OF PROBATION,"$761,996,438.00",2,Covid Response - Public Programs,$0.00,"$147,167.00","$112,167.00","$1,057,833.00","$1,057,833.00"
+DEPARTMENT OF SANITATION,"$922,292,661.00",1,Covid Response - City Operations,$0.00,"$2,919,223.00","$2,919,222.00",$0.00,$0.00
+DEPARTMENT OF SOCIAL SERVICES,"$191,536,798.00",8,Covid Response - Public Programs | Covid Response - City Operations,$0.00,"$161,923,138.00","$155,068,152.00","$308,273,401.00","$282,313,037.00"
+DEPARTMENT OF TRANSPORTATION,"$22,738,481.00",7,Covid Response - Public Programs | Covid Response - City Operations,$0.00,"$537,640.00","$406,000.00","$7,569,108.00","$6,273,197.00"
+FIRE DEPARTMENT,"$73,641,206.00",2,Covid Response - City Operations | Covid Response - Public Programs,$-19.00,"$30,034,490.00","$30,034,490.00","$510,702.00","$510,702.00"
+MAYORALTY,"$41,640,205.00",3,Covid Response - City Operations,$0.00,"$134,328.00",$0.00,$0.00,$0.00
+MISCELLANEOUS,"$39,167,836.00",2,Covid Response - Public Programs,$0.00,"$3,928,021.00",$0.00,"$40,409,411.00","$40,409,411.00"
+OFFICE OF THE COMPTROLLER,"$19,894,291.00",1,Covid Response - City Operations,$0.00,"$62,445.00",$0.00,$0.00,$0.00
+POLICE DEPARTMENT,"$19,693,885.00",1,Covid Response - City Operations,$0.00,"$2,914,707.00",$0.00,"$566,500,000.00","$566,500,000.00"
