@@ -2,8 +2,9 @@ import pandas as pd  # Import pandas for data manipulation and analysis
 import os  # Import os for file path operations
 
 # Define the file path (use raw string to avoid backslash escape issues)
-file_path = r"C:\Users\Nikol\OneDrive\CSC300\projectrrr.csv"
 
+# file_path = "/Users/edonlata/Documents/GitHub/ISI-Project---Agency-s-Spending-During-And-AfterCOVID./Independent_Budget_Office__NYC_COVID_19_Spending_by_Date_-_Citywide_and_by_Agency_20251020 .csv"
+# file_path = r"C:\Users\Nikol\OneDrive\CSC300\projectrrr.csv"
 # Ensure file exists before attempting to read
 if not os.path.exists(file_path):
     raise FileNotFoundError(f"CSV file not found: {file_path}")
