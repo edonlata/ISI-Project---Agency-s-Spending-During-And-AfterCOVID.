@@ -57,14 +57,21 @@ for start in range(0, num_rows, chunk_size):
 print("\n✅ Finished displaying all agencies over $1M.\n")  # Indicate completion
 
 
-
-
-# new_file_path = r"C:\Users\Nikol\OneDrive\CSC300\Department Spending.csv"
+# # Define the new file path
+# new_file_path = r"C:\Users\Nikol\OneDrive\CSC300\ISI-Project---Agency-s-Spending-During-And-AfterCOVID\Department Spending.csv"
 # if not os.path.exists(new_file_path):
 #     raise FileNotFoundError(f"CSV file not found: {new_file_path}")
 
 # df_new = pd.read_csv(new_file_path, engine="python", on_bad_lines="skip")
 # df_new.columns = df_new.columns.str.strip()
+
+
+# #get the names of the departments that match those in the over_1m dataframe only
+# #get the names of the departments that match those in the over_1m dataframe only
+# matching_departments = df_new[df_new['Department'].isin(over_1m['Agency'])]
+# print("\n🟦 Departments matching agencies over $1M spend:\n")
+
+
 
 # #--- Standardize text for better matching ---
 # over_1m['Agency_clean'] = over_1m['Agency'].str.lower().str.strip()
@@ -84,6 +91,42 @@ print("\n✅ Finished displaying all agencies over $1M.\n")  # Indicate completi
 # print(merged[['Department', 'Total_Spend']].to_string(index=False))
 
 # print(f"\n✅ Found {len(merged)} matching departments.\n")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #make the project read another file called Department Spending.csv
